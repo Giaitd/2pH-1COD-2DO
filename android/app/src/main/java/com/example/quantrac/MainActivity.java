@@ -35,7 +35,7 @@ public class MainActivity extends FlutterActivity {
         super.configureFlutterEngine(flutterEngine);
         timerGetPH.schedule(ReadPH.getPHTask(getApplicationContext()), 0, 5000);
         timerGetDo.schedule(ReadDoSensor.getCodSensorTask(getApplicationContext()), 400, 5000);
-        timerGetCod.schedule(ReadCodSensor.getCodSensorTask(getApplicationContext()), 500, 30000);
+        timerGetCod.schedule(ReadCodSensor.getCodSensorTask(getApplicationContext()), 500, 60000);
         timerGetDIDO.schedule(ReadDIDO.getDIDOTask(getApplicationContext()), 600, 2000);
         timerControlOutput.schedule(ControlOutput.controlOutputTask(getApplicationContext()), 2000, 2000);
         timerSetCalibration.schedule(Calibration.CalibrationSensor(getApplicationContext()), 3000, 1000);
